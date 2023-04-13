@@ -1,9 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
-function Hello(props) {
-    return <h1>Hello World!</h1>;
-}
+import Hello from './components/Hola';
 
 const root = ReactDOM.createRoot(document.getElementById("app"));
 root.render(<Hello />);

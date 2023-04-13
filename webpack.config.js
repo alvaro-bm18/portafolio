@@ -8,10 +8,10 @@ module.exports = {
     mode: process.env.NODE_ENV || "development",
     module: {
         rules: [{
-            test: /\.(js || jsx)$/,
+            test: /\.js|\.jsx$/,
             exclude: /node_module/,
             use: {
-                loader: "babel_loader"
+                loader: "babel-loader"
             }
         }]
     },
