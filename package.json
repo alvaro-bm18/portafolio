@@ -1,0 +1,24 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Portafolio personal, Alvaro Barrera, Front End Dev.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portafolio",
+    "front-end",
+    "javascript",
+    "sass",
+    "css3",
+    "html5",
+    "react.js"
+  ],
+  "author": "Álvaro Barrera Montiel",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.79.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
