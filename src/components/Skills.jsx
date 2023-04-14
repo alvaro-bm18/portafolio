@@ -65,28 +65,28 @@ const Skills = ({ lang }) => {
             progress: 70,
         },
         {
-            icon: "💡",
+            icon: "🌈",
             description: { "en": "Figma", "es": "Figma" },
             progress: 70,
         },
         {
-            icon: "💡",
+            icon: "🐧",
             description: { "en": "Linux", "es": "Linux" },
             progress: 70,
         },
         {
-            icon: "💡",
-            description: { "en": "Persistencia", "es": "Persistence" },
+            icon: "🏋️‍♂️",
+            description: { "en": "Persistence", "es": "Persistencia" },
             progress: 70,
         },
         {
-            icon: "💡",
+            icon: "📷",
             description: { "en": "Photoshop", "es": "Photoshop" },
             progress: 70,
         },
         {
-            icon: "💡",
-            description: { "en": "Pulcro", "es": "Neat" },
+            icon: "🫧",
+            description: { "en": "Neat", "es": "Pulcro" },
             progress: 70,
         },
     ];
