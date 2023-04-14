@@ -9,8 +9,18 @@ body{
     display: block;
     width: 100vw;
     height: fit-content;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a{
+    color: RoyalBlue;
 }
 
 button{
     cursor: pointer;
+}
+
+.app-container-content{
+    width: 80%;
+    margin: 0 auto;
 }

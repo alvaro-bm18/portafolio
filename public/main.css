@@ -1,4 +1,6 @@
-*{margin:0;padding:0;box-sizing:border-box}body{position:relative;display:block;width:100vw;height:fit-content}
+*{margin:0;padding:0;box-sizing:border-box}body{position:relative;display:block;width:100vw;height:fit-content}button{cursor:pointer}
 
-header{position:relative;display:flex;width:100%;height:240px;background-attachment:fixed;background-repeat:no-repeat;background-size:100% 100%}.app-options{position:absolute;display:flex;top:20px;right:30px;width:100px;height:42px;background-color:red}header figure img{width:100px;height:100px}
+header{position:relative;display:flex;align-items:flex-end;width:100%;height:200px;background-attachment:fixed;background-repeat:no-repeat;background-size:100% 100%}.app-options{position:absolute;display:flex;top:20px;right:30px;width:100px;height:36px;border-radius:1em;background-color:rgba(250,250,250,0.2);border:1pt solid rgba(250,250,250,0.4);overflow:hidden}.app-options button{width:50%;font-size:16pt;border:none;border-radius:0;background-color:transparent}.app-options button:hover{background-color:rgba(250,250,250,0.2)}.photo-perfil{display:flex;justify-content:center;width:100%}.photo-perfil img{width:140px;height:140px;border-radius:100%}
+
+.introduce-myself{background-color:aliceblue}
 

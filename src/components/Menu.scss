@@ -1,0 +1,50 @@
+.menu-works {
+    padding-top: 40px;
+    height: fit-content;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+}
+
+.options-menu {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+
+    & a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: calc(50% - 5px);
+        border-radius: 0.5em;
+        opacity: 0.8;
+        transition: 0.2s;
+    }
+
+    & a:hover {
+        opacity: 1;
+        box-shadow: 0 1pt 4pt 0 rgba(0, 0, 0, 0.2);
+    }
+
+    & a:nth-child(1) {
+        background-color: PowderBlue;
+    }
+
+    & a:nth-child(2) {
+        background-color: LemonChiffon;
+    }
+
+    & a:nth-child(3) {
+        background-color: Lavender;
+    }
+
+    & a:nth-child(4) {
+        background-color: MintCream;
+    }
+}

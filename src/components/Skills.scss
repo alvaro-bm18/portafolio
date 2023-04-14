@@ -1,0 +1,19 @@
+.skills-container{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    padding: 20px 0;
+    .skill{
+        user-select: none;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        padding: 0.8em 1.2em;
+        border-radius: 2em;
+        border: 1pt solid black;
+
+        strong{
+            margin-right: 1em;
+        }
+    }
+}

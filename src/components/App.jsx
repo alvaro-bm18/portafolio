@@ -6,6 +6,7 @@ import Header from "./Header";
 import Introduce from "./Introduce";
 import Skills from "./Skills";
 import Description from "./Description";
+import Menu from "./Menu";
 
 const App = () => {
     const [theme, setTheme] = useState("light");
@@ -41,9 +42,12 @@ const App = () => {
                 perfilImg={PerfilPhoto}
                 buttonLang={<ButtonToogleLang />}
                 buttonTheme={<ButtonToogleTheme />} />
-            <Introduce />
-            <Skills lang={lang} />
-            <Description />
+            <div className="app-container-content">
+                <Introduce lang={lang} />
+                <Description lang={lang} />
+                <Skills lang={lang} />
+                <Menu lang={lang} />
+            </div>
         </>
     );
 }
