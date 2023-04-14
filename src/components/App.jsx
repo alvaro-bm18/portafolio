@@ -1,11 +1,12 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
+import "./App.scss";
+import Header from "./Header";
 
-class App extends Component{
-    render(){
-        return(
-            <h2>portafolio</h2>
-        );
-    }
+const App = () => {
+    return (
+        <>
+        </>
+    );
 }
 
 export default App;
