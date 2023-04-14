@@ -10,7 +10,7 @@ const Header = ({ theme, bg, buttonLang, buttonTheme, perfilImg }) => {
             </div>
             <div
                 className="photo-perfil"
-                style={{ 'box-shadow': `inset 0 -50px 0 0 ${theme === 'light' ? 'white' : 'black'}` }}>
+                style={{ 'box-shadow': `inset 0 -70px 0 0 ${theme === 'light' ? 'white' : 'black'}` }}>
                 <img src={perfilImg} alt="perfil" />
             </div>
         </header>

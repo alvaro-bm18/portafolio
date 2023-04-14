@@ -3,6 +3,9 @@ import "./App.scss";
 import PerfilPhoto from "./assets/perfil.jpg";
 import Background from "./assets/background.jpg";
 import Header from "./Header";
+import Introduce from "./Introduce";
+import Skills from "./Skills";
+import Description from "./Description";
 
 const App = () => {
     const [theme, setTheme] = useState("light");
@@ -38,6 +41,9 @@ const App = () => {
                 perfilImg={PerfilPhoto}
                 buttonLang={<ButtonToogleLang />}
                 buttonTheme={<ButtonToogleTheme />} />
+            <Introduce />
+            <Skills lang={lang} />
+            <Description />
         </>
     );
 }
