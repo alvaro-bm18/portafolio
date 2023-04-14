@@ -1,10 +1,15 @@
 import React from "react";
+import "./Header.scss";
 
-const Header = ({ theme, buttonToggleTheme }) => {
+const Header = ({ bg, buttonLang, buttonTheme }) => {
     return (
-        <header>
-            <p>Theme: {theme}</p>
-            {buttonToggleTheme}
+        <header style={{'background-image':`url(${bg})`}}>
+            <figure>
+                <figcaption>
+                </figcaption>
+            </figure>
+            {buttonLang}
+            {buttonTheme}
         </header>
     );
 }
