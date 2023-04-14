@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./App.scss";
+import PerfilPhoto from "./assets/perfil.jpg";
 import Background from "./assets/background.jpg";
 import Header from "./Header";
 
@@ -27,13 +28,14 @@ const App = () => {
         (langPage) ? setLang(langPage) : setLang("es");
     }, [theme, lang]);
 
-    const ButtonToogleTheme = () => <button onClick={toogleTheme}>Change theme</button>;
-    const ButtonToogleLang = () => <button onClick={toogleLang}>Change lang</button>;
+    const ButtonToogleTheme = () => <button onClick={toogleTheme}>{theme === 'light' ? '🌞' : '🌚'}</button>;
+    const ButtonToogleLang = () => <button onClick={toogleLang}>{lang === 'es' ? '🇲🇽' : '🇱🇷'}</button>;
     return (
         <>
             <Header
                 theme={theme}
                 bg={Background}
+                perfilImg={PerfilPhoto}
                 buttonLang={<ButtonToogleLang />}
                 buttonTheme={<ButtonToogleTheme />} />
         </>

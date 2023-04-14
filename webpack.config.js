@@ -18,7 +18,7 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader' ],
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
             },
             {
                 test: /\.woff|\.woff2|\.svg|\.jpg|\.png$/,
@@ -34,6 +34,10 @@ module.exports = {
             path.resolve(__dirname, "src"),
             "node_modules"
         ]
+    },
+    devServer: {
+        static: path.resolve(__dirname, 'public'),
+        port: 9000
     },
     plugins: [new MiniCssExtractPlugin()]
 }
