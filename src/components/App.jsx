@@ -7,6 +7,7 @@ import Introduce from "./Introduce";
 import Skills from "./Skills";
 import Description from "./Description";
 import Menu from "./Menu";
+import Projects from "./Projects";
 
 const App = () => {
     const [theme, setTheme] = useState("light");
@@ -47,6 +48,7 @@ const App = () => {
                 <Description lang={lang} />
                 <Skills lang={lang} />
                 <Menu lang={lang} />
+                <Projects lang={lang} />
             </div>
         </>
     );
