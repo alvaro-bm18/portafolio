@@ -4,7 +4,7 @@
     width: 400px;
     height: 480px;
     margin: 0 auto;
-    
+
     .line {
         position: absolute;
         display: flex;
@@ -26,19 +26,36 @@
         }
     }
 
-    button {
-        position: absolute;
+    &:hover > .go-back,
+    &:hover > .go-next{
         display: block;
-        font-size: 24px;
-        top: calc(50% - 12px);
-        z-index: 100;
     }
 
     .go-back {
-        left: -34px;
+        left: 0;
+        transform: translateX(-50%);
     }
 
     .go-next {
-        right: -34px;
+        right: 0;
+        transform: translateX(50%);
+    }
+
+    .go-back,
+    .go-next {
+        position: absolute;
+        display: none;
+        font-size: 18px;
+        top: calc(50% - 12px);
+        border: none;
+        border-radius: 1em;
+        padding: 8px;
+        background-color: white;
+        border: 1px solid #888;
+        z-index: 100;
+
+        &:focus {
+            outline: 2px solid #55acee;
+        }
     }
 }
