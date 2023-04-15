@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./App.scss";
-import PerfilPhoto from "./assets/perfil.jpg";
 import Background from "./assets/background.jpg";
 import Header from "./Header";
 import Introduce from "./Introduce";
@@ -40,7 +39,6 @@ const App = () => {
             <Header
                 theme={theme}
                 bg={Background}
-                perfilImg={PerfilPhoto}
                 buttonLang={<ButtonToogleLang />}
                 buttonTheme={<ButtonToogleTheme />} />
             <div className="app-container-content">
