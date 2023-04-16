@@ -6,6 +6,7 @@ const Skills = ({ lang }) => {
     const [showIt, setShowIt] = useState(true);
     return (
         <section className="skills-container">
+            <h1>{lang === "es" ? "Habilidades" : "Skills"}</h1>
             {skillList.map((skill, index) => {
                 if (showIt) {
                     if (index >= 10) {

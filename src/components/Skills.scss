@@ -4,6 +4,10 @@
     flex-flow: row wrap;
     gap: 10px;
     padding: 20px 0;
+    & h1{
+        display: flex;
+        align-items: center;
+    }
     .skill{
         user-select: none;
         font-family: 'Ubuntu', sans-serif;

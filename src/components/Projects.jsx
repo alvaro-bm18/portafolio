@@ -26,7 +26,13 @@ const Projects = ({ lang }) => {
                     </div>;
                 })}
 
-                <div className="button-show" onClick={() => setExpand(!expand)}>{expand ? "ver más" : "ver menos"}</div>
+                <div
+                    className="button-show"
+                    onClick={() => setExpand(!expand)}>
+                    {expand
+                        ? lang === "es" ? "ver más" : "show more"
+                        : lang === "es" ? "ver menos" : "show less"}
+                </div>
             </div>
         </section>
     );

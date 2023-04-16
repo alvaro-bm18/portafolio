@@ -1,4 +1,8 @@
 .introduce-myself{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
     padding: 20px 0;
     h1, h4{
         text-align: center;
@@ -12,6 +16,7 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
+        width: 50%;
         gap: 20px;
         margin: 20px 0;
     }

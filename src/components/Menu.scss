@@ -25,11 +25,12 @@
         border-radius: 0.5em;
         opacity: 0.8;
         transition: 0.2s;
+        box-shadow: 0 0 1pt 0 rgba(0, 0, 0, 0.2);
     }
 
     & a:hover {
         opacity: 1;
-        box-shadow: 0 1pt 4pt 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 1pt 6pt 0 rgba(0, 0, 0, 0.2);
     }
 
     & a:nth-child(1) {
