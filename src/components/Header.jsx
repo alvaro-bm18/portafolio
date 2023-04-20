@@ -3,7 +3,7 @@ import "./Header.scss";
 
 const Header = ({ theme, bg, buttonLang, buttonTheme }) => {
     return (
-        <header style={{ 'background-image': `url(${bg})` }}>
+        <header id="top" style={{ 'background-image': `url(${bg})` }}>
             <div className="app-options">
                 {buttonTheme}
                 {buttonLang}
