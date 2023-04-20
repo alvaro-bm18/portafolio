@@ -1,14 +1,19 @@
 import React from "react";
 import "./Description.scss";
 
-const Description = ({ lang }) => {
+const Description = ({ lang, theme }) => {
     return (
-        <section className="description">
+        <section
+            className="description"
+            style={
+                {
+                    "color": `${theme === "light" ? "black" : "white"}`
+                }
+            }>
             <p>{lang === "es"
                 ? "Desarrollador front-end 🔸 Ciencias Computacionales 🔸 Diseñador UX/UI 🚀"
                 : "Front-end Developer 🔸 Computer Science 🔸 UX/UI Designer 🚀"}</p>
-            <br></br><br></br>
-            <p>🇲🇽 México 🎯 {lang === "es" ? "Enfocado" : "Focusing"} 🐧 {lang === "es" ? "Evangelista de código abierto" : "Open source evangelist"}</p><br></br>
+            <br></br>
             <p>{lang === "es"
                 ? "Enfocado en mi desarrollo personal y profecional, todos los dias pretendo ser mejor que ayer 🌵"
                 : "I'm focus on my personal and professional developent, every day I pretend to be better than yesterday 🌵"}</p>
