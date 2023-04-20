@@ -14,14 +14,12 @@ const Projects = ({ lang }) => {
                         return <></>;
                     }
                     return <div className="project" key={`pj-${index}`}>
-                        <h2>{project.title}</h2>
+                        <h2>📂 {project.title}</h2>
                         <p className="desc-project">{project.description[lang]}</p>
                         <div className="tech-tags">
                             {project.tech.map((techSkill, ind) => <p><strong>{techSkill}</strong>{ind === (project.tech.length - 1) ? '' : ' 🔹 '}</p>)}
                         </div>
-                        <div className="links-project">
-                            <p>🔗 <a href={project.link}>{project.title}</a></p>
-                        </div>
+                        <a className="links-project" href={project.link}>🔗 {project.title}</a>
                         <GallerySS screenshots={project.screenshots} />
                     </div>;
                 })}
