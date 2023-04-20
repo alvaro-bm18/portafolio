@@ -1,11 +1,11 @@
 import React from "react";
 import "./Education.scss";
 
-import mantiz from "./assets/mantiz.png";
-import cecyteh from "./assets/cecyteh.jpg";
-import upmh from "./assets/upmh.jpg";
-import ossu from "./assets/ossu.jpg";
-import alura from "./assets/alura.jpg";
+import mantiz from "./assets/logos/mantiz.png";
+import cecyteh from "./assets/logos/cecyteh.jpg";
+import upmh from "./assets/logos/upmh.jpg";
+import ossu from "./assets/logos/ossu.jpg";
+import alura from "./assets/logos/alura.jpg";
 
 const Education = ({ lang }) => {
     const education = [
