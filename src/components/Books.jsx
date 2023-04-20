@@ -6,7 +6,7 @@ import eloquentBook from "./assets/books/eloquent.png";
 import reactBook from "./assets/books/reactForPros.png";
 import javascriptBook from "./assets/books/javascriptForPros.png";
 
-const Books = ({ lang }) => {
+const Books = ({ lang, theme }) => {
     const booksReaded = [
         {
             title: "The c++ programming language",
@@ -66,7 +66,7 @@ const Books = ({ lang }) => {
             <h4>Estos son algunos libros que he leído en mi viaje de aprendizaje 📚</h4>
             <div className="bibliotech">
                 {booksReaded.map((book, index) => {
-                    return (<figure>
+                    return (<figure className={`shadow-${theme}`}>
                         <img
                             src={book.cover}
                             alt={`Cover of ${book.title}`}

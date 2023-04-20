@@ -17,7 +17,6 @@
         height: fit-content;
         overflow: hidden;
         border-radius: 20px;
-        box-shadow: 0 0 2px 0 rgba(black, 0.4);
 
         & img {
             width: 130px;
@@ -40,5 +39,11 @@
                 margin: 10px 0 0;
             }
         }
+    }
+    .shadow-light{
+        box-shadow: 0 0 2px 0 rgba(black, 0.4); 
+    }
+    .shadow-dark{
+        box-shadow: 0 0 2px 0 white; 
     }
 }
