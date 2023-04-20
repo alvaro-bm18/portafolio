@@ -1,0 +1,15 @@
+#bottom{
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: 30vh;
+
+    & :last-child{
+        font-size: 12px;
+        font-weight: bolder;
+    }
+}
