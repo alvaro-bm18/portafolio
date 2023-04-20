@@ -8,6 +8,7 @@ import Description from "./Description";
 import Menu from "./Menu";
 import Projects from "./Projects";
 import Education from "./Education";
+import Books from "./Books";
 
 const App = () => {
     const [theme, setTheme] = useState("light");
@@ -49,6 +50,7 @@ const App = () => {
                 <Menu lang={lang} />
                 <Projects lang={lang} />
                 <Education lang={lang} />
+                <Books lang={lang} />
             </div>
         </>
     );
