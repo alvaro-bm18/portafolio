@@ -6,6 +6,10 @@
     display: flex;
     flex-flow: column nowrap;
     gap: 30px;
+
+    @media screen and (max-width: 500px) {
+        width: 100%;
+    }
 }
 
 .school-container {
@@ -28,6 +32,10 @@
             text-decoration: none;
         }
     }
+
+    @media screen and (max-width: 500px) {
+        padding-left: 50px;
+    }
 }
 
 .img-school {
@@ -39,4 +47,9 @@
     height: 60px;
     border-radius: 100%;
     box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+
+    @media screen and (max-width: 500px) {
+        width: 40px;
+        height: 40px;
+    }
 }

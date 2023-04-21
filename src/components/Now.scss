@@ -14,7 +14,7 @@
             p {
                 position: relative;
                 display: block;
-                margin: 10px 0;
+                margin: 12px 0;
                 padding-left: 0.5em;
 
                 span {
@@ -25,9 +25,17 @@
                 }
             }
 
+            @media screen and (max-width: 500px) {
+                padding: 14px 0 14px 25px;
+            }
+
             p:after {
                 content: ".";
             }
+        }
+
+        @media screen and (max-width: 500px) {
+            width: 100%;
         }
     }
 }

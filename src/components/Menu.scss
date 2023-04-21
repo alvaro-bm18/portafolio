@@ -7,6 +7,10 @@
     h2 {
         margin-bottom: 20px;
     }
+
+    @media screen and (max-width: 500px) {
+        height: 50vh;
+    }
 }
 
 .options-menu {
@@ -17,6 +21,10 @@
     width: 80%;
     height: 200px;
     margin: 0 auto;
+
+    @media screen and (max-width: 500px) {
+        width: 100%;
+    }
 
     & a {
         text-decoration: none;
