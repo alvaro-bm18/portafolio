@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     position: relative;
     display: block;
     width: 100vw;
@@ -13,16 +13,80 @@ body{
     background-color: #f8f8f8;
 }
 
-a{
+a {
     color: RoyalBlue;
     font-weight: bold;
 }
 
-button{
+button {
     cursor: pointer;
 }
 
-.app-container-content{
+.app-container-content {
     width: 80%;
     margin: 0 auto;
+}
+
+.button-control {
+    position: fixed;
+    display: flex;
+    flex-flow: column nowrap;
+    bottom: 40px;
+    right: 40px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 1em;
+    opacity: 0.4;
+    overflow: hidden;
+
+    & a {
+        position: relative;
+        display: block;
+        text-align: right;
+        text-decoration: none;
+        padding: 4px 8px;
+
+        &:not(:last-child){
+            display: none;
+        }
+    }
+
+    &:hover {
+        opacity: 0.6;
+        & a{
+            display: block;
+        }
+    }
+}
+
+.btn-light {
+    background-color: white;
+    border: 1pt solid black;
+
+    & a {
+        color: black;
+        &:hover{
+            background-color: #EEE;
+        }
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.btn-dark {
+    background-color: black;
+    border: 1pt solid white;
+
+    & a {
+        color: white;
+        &:hover{
+            background-color: #333;
+        }
+    }
+
+    &:hover {
+        opacity: 1;
+    }
 }
