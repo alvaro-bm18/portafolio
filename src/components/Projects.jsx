@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import keyG from "./keyG.js";
 import "./Projects.scss";
 import GallerySS from "./GallerySS";
 import projectsInfo from "./projects.js";
@@ -13,7 +14,7 @@ const Projects = ({ lang }) => {
                     if (expand && index > 2) {
                         return <></>;
                     }
-                    return <div className="project" key={`pj-${index}`}>
+                    return (<div className="project" key={keyG()}>
                         <h2>📂 {project.title}</h2>
                         <p className="desc-project">{project.description[lang]}</p>
                         <div className="tech-tags">
@@ -21,7 +22,7 @@ const Projects = ({ lang }) => {
                         </div>
                         <a className="links-project" href={project.link}>🔗 {project.title}</a>
                         <GallerySS screenshots={project.screenshots} />
-                    </div>;
+                    </div>);
                 })}
 
                 <div

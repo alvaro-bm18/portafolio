@@ -1,0 +1,33 @@
+#now {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 100px 0;
+
+    .now-container {
+        position: relative;
+        width: 80%;
+        margin: 20px auto 0;
+        .list-of-goals {
+            padding: 18px 60px;
+
+            p {
+                position: relative;
+                display: block;
+                margin: 10px 0;
+                padding-left: 0.5em;
+
+                span {
+                    position: absolute;
+                    display: block;
+                    top: 0;
+                    left: -1em;
+                }
+            }
+
+            p:after {
+                content: ".";
+            }
+        }
+    }
+}
