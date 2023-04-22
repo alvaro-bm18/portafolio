@@ -111,7 +111,7 @@ const App = () => {
             <Footer lang={lang} theme={theme} />
             <div className={`button-control btn-${theme}`}>
                 {
-                    records.map(record => <a href={`#${record}`}>{record[0].toUpperCase() + record.slice(1).toLowerCase()}</a>)
+                    records.map(record => <a href={`#${record}`}>{record}</a>)
                 }
                 <a href="#menu">menu</a>
                 <a href="#top">top</a>
