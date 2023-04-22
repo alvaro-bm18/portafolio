@@ -3,7 +3,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
     entry: path.join(__dirname, "src", "index.jsx"),
     output: {
-        path: path.join(__dirname, "public"),
+        // path: path.join(__dirname, "public"),
+        path: path.join(__dirname),
         filename: "main.js"
     },
     mode: process.env.NODE_ENV || "development",
@@ -35,9 +36,9 @@ module.exports = {
             "node_modules"
         ]
     },
-    devServer: {
-        static: path.resolve(__dirname, 'public'),
-        port: 9000
-    },
+    // devServer: {
+    //     static: path.resolve(__dirname, 'public'),
+    //     port: 9000
+    // },
     plugins: [new MiniCssExtractPlugin()]
 }
